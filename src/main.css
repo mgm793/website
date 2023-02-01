@@ -44,4 +44,6 @@ body{
 
 .home-page{
   display: none;
+  justify-content: center;
+  padding: 50px;
 }

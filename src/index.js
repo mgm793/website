@@ -3,7 +3,7 @@
     const laodingPage = document.getElementById("loading-page");
     const homePage = document.getElementById("home-page");
     laodingPage.style.display = "none";
-    homePage.style.display = "block";
+    homePage.style.display = "flex";
   }
   const startBtn = document.getElementById("start-btn");
   startBtn.addEventListener("click", changeContent);
