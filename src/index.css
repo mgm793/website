@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+Display:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+:root{
+  --lightColor: #f4f4f4;
+  --darkColor: black;
+  --background-color: var(--darkColor);
+  --font-color: var(--lightColor);
+  @media (prefers-color-scheme: light) {
+    --background-color: var(--lightColor);
+    --font-color: var(var(--darkColor));
+  }
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--background-color);
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: [main-start] 1fr [content-start] minmax(auto, 1000px) [content-end] 1fr [main-end];
+}
